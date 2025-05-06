@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Prog2Uppgifter\\Moment4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC73CA-D097-4C0F-BD94-DC8BEAA76927}|Moment4\\Moment4.csproj|c:\\prog2uppgifter\\moment4\\moment4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEC73CA-D097-4C0F-BD94-DC8BEAA76927}|Moment4\\Moment4.csproj|solutionrelative:moment4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC73CA-D097-4C0F-BD94-DC8BEAA76927}|Moment4\\Moment4.csproj|C:\\Prog2Uppgifter\\Moment4\\moment4\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEC73CA-D097-4C0F-BD94-DC8BEAA76927}|Moment4\\Moment4.csproj|solutionrelative:moment4\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC73CA-D097-4C0F-BD94-DC8BEAA76927}|Moment4\\Moment4.csproj|C:\\Prog2Uppgifter\\Moment4\\moment4\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEC73CA-D097-4C0F-BD94-DC8BEAA76927}|Moment4\\Moment4.csproj|solutionrelative:moment4\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Card.cs",
+              "DocumentMoniker": "C:\\Prog2Uppgifter\\Moment4\\Moment4\\Card.cs",
+              "RelativeDocumentMoniker": "Moment4\\Card.cs",
+              "ToolTip": "C:\\Prog2Uppgifter\\Moment4\\Moment4\\Card.cs",
+              "RelativeToolTip": "Moment4\\Card.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAIwBgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T13:53:48.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Deck.cs",
+              "DocumentMoniker": "C:\\Prog2Uppgifter\\Moment4\\Moment4\\Deck.cs",
+              "RelativeDocumentMoniker": "Moment4\\Deck.cs",
+              "ToolTip": "C:\\Prog2Uppgifter\\Moment4\\Moment4\\Deck.cs",
+              "RelativeToolTip": "Moment4\\Deck.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T13:53:37.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Prog2Uppgifter\\Moment4\\Moment4\\Program.cs",
+              "RelativeDocumentMoniker": "Moment4\\Program.cs",
+              "ToolTip": "C:\\Prog2Uppgifter\\Moment4\\Moment4\\Program.cs",
+              "RelativeToolTip": "Moment4\\Program.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAjwEUAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T13:53:02.615Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

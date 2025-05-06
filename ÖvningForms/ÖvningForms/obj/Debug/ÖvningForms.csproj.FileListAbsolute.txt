@@ -1,0 +1,10 @@
+C:\Prog2Uppgifter\ÖvningForms\ÖvningForms\bin\Debug\ÖvningForms.exe.config
+C:\Prog2Uppgifter\ÖvningForms\ÖvningForms\bin\Debug\ÖvningForms.exe
+C:\Prog2Uppgifter\ÖvningForms\ÖvningForms\bin\Debug\ÖvningForms.pdb
+C:\Prog2Uppgifter\ÖvningForms\ÖvningForms\obj\Debug\ÖvningForms.csproj.AssemblyReference.cache
+C:\Prog2Uppgifter\ÖvningForms\ÖvningForms\obj\Debug\ÖvningForms.Form1.resources
+C:\Prog2Uppgifter\ÖvningForms\ÖvningForms\obj\Debug\ÖvningForms.Properties.Resources.resources
+C:\Prog2Uppgifter\ÖvningForms\ÖvningForms\obj\Debug\ÖvningForms.csproj.GenerateResource.cache
+C:\Prog2Uppgifter\ÖvningForms\ÖvningForms\obj\Debug\ÖvningForms.csproj.CoreCompileInputs.cache
+C:\Prog2Uppgifter\ÖvningForms\ÖvningForms\obj\Debug\ÖvningForms.exe
+C:\Prog2Uppgifter\ÖvningForms\ÖvningForms\obj\Debug\ÖvningForms.pdb

@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Prog2Uppgifter\\Moment2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6BC46AC5-5659-4460-AAE6-818F11451F21}|Moment2\\Moment2.csproj|c:\\prog2uppgifter\\moment2\\moment2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BC46AC5-5659-4460-AAE6-818F11451F21}|Moment2\\Moment2.csproj|solutionrelative:moment2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BC46AC5-5659-4460-AAE6-818F11451F21}|Moment2\\Moment2.csproj|C:\\Prog2Uppgifter\\Moment2\\moment2\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BC46AC5-5659-4460-AAE6-818F11451F21}|Moment2\\Moment2.csproj|solutionrelative:moment2\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Prog2Uppgifter\\Moment2\\Moment2\\Class1.cs",
+              "RelativeDocumentMoniker": "Moment2\\Class1.cs",
+              "ToolTip": "C:\\Prog2Uppgifter\\Moment2\\Moment2\\Class1.cs",
+              "RelativeToolTip": "Moment2\\Class1.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowCUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T06:55:09.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Prog2Uppgifter\\Moment2\\Moment2\\Program.cs",
+              "RelativeDocumentMoniker": "Moment2\\Program.cs",
+              "ToolTip": "C:\\Prog2Uppgifter\\Moment2\\Moment2\\Program.cs",
+              "RelativeToolTip": "Moment2\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T07:55:49.218Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

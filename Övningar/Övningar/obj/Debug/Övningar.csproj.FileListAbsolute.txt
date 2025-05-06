@@ -1,0 +1,7 @@
+C:\Prog2Uppgifter\Övningar\Övningar\bin\Debug\Övningar.exe.config
+C:\Prog2Uppgifter\Övningar\Övningar\bin\Debug\Övningar.exe
+C:\Prog2Uppgifter\Övningar\Övningar\bin\Debug\Övningar.pdb
+C:\Prog2Uppgifter\Övningar\Övningar\obj\Debug\Övningar.csproj.AssemblyReference.cache
+C:\Prog2Uppgifter\Övningar\Övningar\obj\Debug\Övningar.csproj.CoreCompileInputs.cache
+C:\Prog2Uppgifter\Övningar\Övningar\obj\Debug\Övningar.exe
+C:\Prog2Uppgifter\Övningar\Övningar\obj\Debug\Övningar.pdb

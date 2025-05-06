@@ -1,0 +1,7 @@
+C:\Prog2Uppgifter\Moment4\Moment4\bin\Debug\Moment4.exe.config
+C:\Prog2Uppgifter\Moment4\Moment4\bin\Debug\Moment4.exe
+C:\Prog2Uppgifter\Moment4\Moment4\bin\Debug\Moment4.pdb
+C:\Prog2Uppgifter\Moment4\Moment4\obj\Debug\Moment4.csproj.AssemblyReference.cache
+C:\Prog2Uppgifter\Moment4\Moment4\obj\Debug\Moment4.csproj.CoreCompileInputs.cache
+C:\Prog2Uppgifter\Moment4\Moment4\obj\Debug\Moment4.exe
+C:\Prog2Uppgifter\Moment4\Moment4\obj\Debug\Moment4.pdb
