@@ -13,8 +13,9 @@ namespace Miniräknare
 {
     public partial class Form1 : Form
     {
-        private string minOperator = "";
-        private double förraVärdet = 0;
+        private string minOperator = ""; // operatorn som används (+,-,*,/)
+        private double förraVärdet = 0; // det tidigare värdet som lagras i beräkningen
+        private bool nyInmatning;
         public Form1()
         {
             InitializeComponent();
@@ -27,17 +28,17 @@ namespace Miniräknare
 
         private void num1_Click(object sender, EventArgs e)
         {
-            siffror("1");
+            siffror("1"); // lägger till siffran "1" till textDisplay
         }
 
         private void num2_Click(object sender, EventArgs e)
         {
-            siffror("2");
+            siffror("2"); // lägger till siffran "2" till textDisplay
         }
 
         private void num3_Click(object sender, EventArgs e)
         {
-            siffror("3");
+            siffror("3"); // och så vidare
         }
 
         private void num4_Click(object sender, EventArgs e)
@@ -72,58 +73,58 @@ namespace Miniräknare
 
         private void btnPlus_Click(object sender, EventArgs e)
         {
-            LikaMed();
-            minOperator = "+";
-            nyInmatning = true;
+            LikaMed(); // utför beräkningen med den aktuella operatorn
+            minOperator = "+"; // sparar den nya operatorn
+            nyInmatning = true; //startar en ny inmatning
         }
 
         private void btnEqual_Click(object sender, EventArgs e)
         {
-            LikaMed();
-            minOperator = "";
+            LikaMed(); // utför beräkningen med den aktuella operatorn
+            minOperator = ""; // tömmer operatorn
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            minOperator = "";
-            förraVärdet = 0;
-            textDisplay.Text = "0";
+            minOperator = ""; // Nollställer operatorn
+            förraVärdet = 0; // återställer förraVärdet till 0
+            textDisplay.Text = "0"; // återställer textDisplay
             nyInmatning = false;
         }
         private void LikaMed()
         {
-            double nyttVärde;
+            double nyttVärde; // det aktuella värdet som från display
 
-            if (!double.TryParse(textDisplay.Text.Replace("i", ""), out nyttVärde))
+            if (!double.TryParse(textDisplay.Text.Replace("i", ""), out nyttVärde)) // försöker konvertera textDisplay till double
             {
+                MessageBox.Show("Error: Invalid input"); // felmeddelande vid ogiltig inmatning
                 return;
             }
-            
 
-            switch (minOperator)
+            switch (minOperator) // beräknar baserat på vilken operator som blev vald
             {
                 case "+":
-                    nyttVärde = förraVärdet + nyttVärde;
+                    nyttVärde = förraVärdet + nyttVärde; // add
                     break;
                 case "-":
-                    nyttVärde = förraVärdet - nyttVärde;
+                    nyttVärde = förraVärdet - nyttVärde; // sub
                     break;
                 case "/":
-                    if (nyttVärde == 0)
+                    if (nyttVärde == 0) // kontroll för division med 0
                     {
                         MessageBox.Show("Error: /0");
                         return;
                     }
-                    nyttVärde = förraVärdet / nyttVärde;
+                    nyttVärde = förraVärdet / nyttVärde; // div
                     break;
                 case "*":
-                    nyttVärde = förraVärdet * nyttVärde;
+                    nyttVärde = förraVärdet * nyttVärde; // multi
                     break;
 
             }
-            förraVärdet = nyttVärde;
-            textDisplay.Text = nyttVärde.ToString();
-            nyInmatning = true;
+            förraVärdet = nyttVärde; // sparar värdet
+            textDisplay.Text = nyttVärde.ToString(); // visar resultatet i textDisplay
+            nyInmatning = true; //nästa inmatning ska börja på nytt
         }
 
         private void btnDivide_Click(object sender, EventArgs e)
@@ -147,7 +148,7 @@ namespace Miniräknare
 
         private void btnComma_Click(object sender, EventArgs e)
         {
-            if (!textDisplay.Text.Contains(","))
+            if (!textDisplay.Text.Contains(",")) // komma läggs till om det inte redan finns
             {
                 textDisplay.Text += ",";
             }
@@ -167,7 +168,7 @@ namespace Miniräknare
                 double result;
                 bool isNegative = false;
 
-                if (currentValue < 0)
+                if (currentValue < 0) // om värdet är negativt
                 {
                     result = Math.Sqrt(-currentValue);
                     isNegative = true;
@@ -177,21 +178,21 @@ namespace Miniräknare
                     result = Math.Sqrt(currentValue);
                 }
 
-                textDisplay.Text = isNegative ? result.ToString() + "i" : result.ToString();
+                textDisplay.Text = isNegative ? result.ToString() + "i" : result.ToString(); // uppdaterar textDisplay med resultatet. Any number squared will produce a positive number, so there is no true square root of a negative number. Square roots of negative numbers can only be determined using the imaginary number called an iota, or i.
                 nyInmatning = true;
             }
         }
-        private bool nyInmatning;
-        private void siffror(string siffra)
+        
+        private void siffror(string siffra) // metod för att hantera siffror
         {
-            if (textDisplay.Text == "0" || nyInmatning)
+            if (textDisplay.Text == "0" || nyInmatning) // kontrollerar om textDisplay är "0" eller om nyInmatning är true
             {
-                textDisplay.Text = siffra;
+                textDisplay.Text = siffra; // ersätter textDisplay med den nya siffran
                 nyInmatning = false;
             }
             else
             {
-                textDisplay.Text += siffra;
+                textDisplay.Text += siffra; // lägger till siffran till befintlig text
             }
         }
     }
