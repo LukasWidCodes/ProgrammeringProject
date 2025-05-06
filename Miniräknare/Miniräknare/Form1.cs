@@ -27,117 +27,54 @@ namespace Miniräknare
 
         private void num1_Click(object sender, EventArgs e)
         {
-            if (textDisplay.Text == "0")
-            {
-                textDisplay.Text = "1";
-            }
-            else
-            {
-                textDisplay.Text += "1";
-            }
+            siffror("1");
         }
 
         private void num2_Click(object sender, EventArgs e)
         {
-            if (textDisplay.Text == "0")
-            {
-                textDisplay.Text = "2";
-            }
-            else
-            {
-                textDisplay.Text += "2";
-            }
+            siffror("2");
         }
 
         private void num3_Click(object sender, EventArgs e)
         {
-            if (textDisplay.Text == "0")
-            {
-                textDisplay.Text = "3";
-            }
-            else
-            {
-                textDisplay.Text += "3";
-            }
+            siffror("3");
         }
 
         private void num4_Click(object sender, EventArgs e)
         {
-            if (textDisplay.Text == "0")
-            {
-                textDisplay.Text = "4";
-            }
-            else
-            {
-                textDisplay.Text += "4";
-            }
+            siffror("4");
         }
 
         private void num5_Click(object sender, EventArgs e)
         {
-            if (textDisplay.Text == "0")
-            {
-                textDisplay.Text = "5";
-            }
-            else
-            {
-                textDisplay.Text += "5";
-            }
+            siffror("5");
         }
 
         private void num6_Click(object sender, EventArgs e)
         {
-            if (textDisplay.Text == "0")
-            {
-                textDisplay.Text = "6";
-            }
-            else
-            {
-                textDisplay.Text += "6";
-            }
+            siffror("6");
         }
 
         private void num7_Click(object sender, EventArgs e)
         {
-            if (textDisplay.Text == "0")
-            {
-                textDisplay.Text = "7";
-            }
-            else
-            {
-                textDisplay.Text += "7";
-            }
+            siffror("7");
         }
 
         private void num8_Click(object sender, EventArgs e)
         {
-            if (textDisplay.Text == "0")
-            {
-                textDisplay.Text = "8";
-            }
-            else
-            {
-                textDisplay.Text += "8";
-            }
+            siffror("8");
         }
 
         private void num9_Click(object sender, EventArgs e)
         {
-            if (textDisplay.Text == "0")
-            {
-                textDisplay.Text = "9";
-            }
-            else
-            {
-                textDisplay.Text += "9";
-            }
+            siffror("9");
         }
 
         private void btnPlus_Click(object sender, EventArgs e)
         {
             LikaMed();
             minOperator = "+";
-            textDisplay.Text = "0";
+            nyInmatning = true;
         }
 
         private void btnEqual_Click(object sender, EventArgs e)
@@ -151,15 +88,13 @@ namespace Miniräknare
             minOperator = "";
             förraVärdet = 0;
             textDisplay.Text = "0";
+            nyInmatning = false;
         }
         private void LikaMed()
         {
             double nyttVärde;
-            if (textDisplay.Text.Contains("√"))
-            {
-                textDisplay.Text = textDisplay.Text.Remove(0, 1);
-            }
-            if (!double.TryParse(textDisplay.Text, out nyttVärde))
+
+            if (!double.TryParse(textDisplay.Text.Replace("i", ""), out nyttVärde))
             {
                 return;
             }
@@ -174,39 +109,40 @@ namespace Miniräknare
                     nyttVärde = förraVärdet - nyttVärde;
                     break;
                 case "/":
+                    if (nyttVärde == 0)
+                    {
+                        MessageBox.Show("Error: /0");
+                        return;
+                    }
                     nyttVärde = förraVärdet / nyttVärde;
                     break;
                 case "*":
                     nyttVärde = förraVärdet * nyttVärde;
                     break;
-                case "√":
-                    nyttVärde = Math.Sqrt(nyttVärde);
-                    break;
+
             }
             förraVärdet = nyttVärde;
             textDisplay.Text = nyttVärde.ToString();
+            nyInmatning = true;
         }
 
         private void btnDivide_Click(object sender, EventArgs e)
         {
             LikaMed();
             minOperator = "/";
-            textDisplay.Text = "0";
+            nyInmatning = true;
         }
 
         private void num0_Click(object sender, EventArgs e)
         {
-            if(textDisplay.Text != "0")
-            {
-                textDisplay.Text += "0";
-            }
+            siffror("0");
         }
 
         private void btnMinus_Click(object sender, EventArgs e)
         {
             LikaMed();
             minOperator = "-";
-            textDisplay.Text = "0";
+            nyInmatning = true;
         }
 
         private void btnComma_Click(object sender, EventArgs e)
@@ -221,13 +157,42 @@ namespace Miniräknare
         {
             LikaMed();
             minOperator = "*";
-            textDisplay.Text = "0";
+            nyInmatning = true;
         }
 
         private void btnSqr_Click(object sender, EventArgs e)
         {
-            textDisplay.Text = "√";
-            minOperator = "√";
+            if (double.TryParse(textDisplay.Text, out double currentValue))
+            {
+                double result;
+                bool isNegative = false;
+
+                if (currentValue < 0)
+                {
+                    result = Math.Sqrt(-currentValue);
+                    isNegative = true;
+                }
+                else
+                {
+                    result = Math.Sqrt(currentValue);
+                }
+
+                textDisplay.Text = isNegative ? result.ToString() + "i" : result.ToString();
+                nyInmatning = true;
+            }
+        }
+        private bool nyInmatning;
+        private void siffror(string siffra)
+        {
+            if (textDisplay.Text == "0" || nyInmatning)
+            {
+                textDisplay.Text = siffra;
+                nyInmatning = false;
+            }
+            else
+            {
+                textDisplay.Text += siffra;
+            }
         }
     }
 }
