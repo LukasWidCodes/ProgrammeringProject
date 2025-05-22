@@ -32,9 +32,10 @@
               "RelativeDocumentMoniker": "Minir\u00E4knare\\Form1.Designer.cs",
               "ToolTip": "C:\\Prog2Uppgifter\\Minir\u00E4knare\\Minir\u00E4knare\\Form1.Designer.cs",
               "RelativeToolTip": "Minir\u00E4knare\\Form1.Designer.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAArwBwBAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAMkAAAAAAAAAAADgvxwBAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:23:23.432Z"
+              "WhenOpened": "2025-04-29T11:23:23.432Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -44,7 +45,7 @@
               "RelativeDocumentMoniker": "Minir\u00E4knare\\Form1.cs",
               "ToolTip": "C:\\Prog2Uppgifter\\Minir\u00E4knare\\Minir\u00E4knare\\Form1.cs",
               "RelativeToolTip": "Minir\u00E4knare\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMEAAABbAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAqwKcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-29T11:23:15.91Z",
               "EditorCaption": ""
@@ -58,7 +59,8 @@
               "ToolTip": "C:\\Prog2Uppgifter\\Minir\u00E4knare\\Minir\u00E4knare\\Form1.cs [Design]",
               "RelativeToolTip": "Minir\u00E4knare\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:21:55.394Z"
+              "WhenOpened": "2025-04-29T11:21:55.394Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
